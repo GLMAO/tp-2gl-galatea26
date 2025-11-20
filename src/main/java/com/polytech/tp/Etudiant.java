@@ -7,15 +7,12 @@ public class Etudiant implements Observer {
         this.nom = nom;
     }
 
-    
+    @Override
     public void update(String message) {
         System.out.println("Notification pour l'étudiant " + nom + " : " + message);
     }
+
     public String getNom() {
         return nom;
     }
 }
-
-   
-
-  
