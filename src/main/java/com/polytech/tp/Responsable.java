@@ -1,6 +1,6 @@
 package com.polytech.tp;
 
-public class Responsable {
+public class Responsable implements Observer{
     private String nom;
 
     public Responsable(String nom) {
@@ -10,5 +10,9 @@ public class Responsable {
     
     public void update(String message) {
         System.out.println("Notification pour le responsable " + nom + " : " + message);
+    }
+
+    public String getNom() {
+        return nom;
     }
 }
